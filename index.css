@@ -1,0 +1,66 @@
+```
+
+/* Media Queries para Impressão */
+@media print {
+  body {
+    font-size: 12px;
+  }
+  nav, footer {
+    display: none; /* Ocultar navegação e rodapé na impressão */
+  }
+  article {
+    column-count: 2; /* Exibir o conteúdo principal em duas colunas */
+  }
+}
+
+/* Smartphones */
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+  .menu {
+    display: none; /* Ocultar menu em telas pequenas */
+  }
+}
+
+/* Tablets */
+@media (min-width: 481px) and (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+  .menu {
+    display: block;
+  }
+}
+
+/* Desktops */
+@media (min-width: 769px) {
+  body {
+    font-size: 18px;
+  }
+  .menu {
+    display: flex;
+  }
+}
+
+/* Modo retrato (portrait) */
+@media (orientation: portrait) {
+  header {
+    font-size: 24px;
+  }
+  .menu {
+    display: block; /* Exibir menu no modo retrato */
+  }
+}
+
+/* Modo paisagem (landscape) */
+@media (orientation: landscape) {
+  header {
+    font-size: 32px;
+  }
+  .gallery {
+    grid-template-columns: repeat(4, 1fr); /* Mais colunas na galeria no modo paisagem */
+  }
+}
+
+```
